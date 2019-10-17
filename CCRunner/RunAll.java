@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"feature/Chapter1.feature", "feature/Chapter2.feature"},
+@CucumberOptions(features = {"feature/Chapter1.feature", "feature/Chapter2.feature", "feature/Chapter3.feature"},
 				 glue = {"Chapter1_Tests", "Chapter2_Tests"},
 				 dryRun = false,
 				 monochrome = false,

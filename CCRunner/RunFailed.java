@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"@rerun/failed_scenarios.txt"},
-				 glue = {"Chapter1_Tests","Chapter2_Tests","Chapter3_Tests"},
+				 glue = {"Chapter1_Tests","Chapter2_Tests","Chapter3_Tests", ,"Chapter4_tests"},
 				 dryRun = false,
 				 monochrome = false,
 				 format = { "pretty", "html:target/cucumber-report/single"})

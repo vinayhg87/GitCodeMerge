@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 				 dryRun = false,
 				 monochrome = false,
 				 format={"html:TestReports"},
-				 plugin={"rerun:rerun/failed_scenarios.txt"})
+				 plugin={"rerun:rerun/failed_scenarios.txt", "rerun:rerun/failed_scenarios2.txt"})
 
 
 public class RunAll{}

@@ -9,12 +9,12 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"feature/Chapter1.feature", "feature/Chapter2.feature", "feature/Chapter3.feature",  "feature/Chapter4.feature", "feature/Chapter5.feature"},
-				 glue = {"Chapter1_Tests", "Chapter2_Tests", "Chapter3_Tests","Chapter4_Tests","Chapter5.feature"},
+@CucumberOptions(features = {"feature/Chapter1.feature", "feature/Chapter2.feature", "feature/Chapter3.feature"},
+				 glue = {"Chapter1_Tests", "Chapter2_Tests", "Chapter3_Tests"},
 				 dryRun = false,
 				 monochrome = false,
 				 format={"html:TestReports"},
-				 plugin={"rerun:rerun/failed_scenarios.txt"})
+				 plugin={"rerun:rerun/failed_scenarios.txt", "rerun:rerun/failed_scenarios1.txt", "rerun:rerun/failed_scenarios3.txt"})
 
 
 public class RunAll{}
